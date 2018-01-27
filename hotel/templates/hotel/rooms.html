@@ -1,0 +1,17 @@
+<h1>Rooms</h1>>
+
+<table style="width:100%">
+    <tr>
+        <th>Room number</th>
+        <th>Status</th>
+        <th>Guest name</th>
+    </tr>
+        {% for obj in rooms_list %}
+    <tr>
+        <td> {{obj.room_number}}</td>
+        <td> {{obj.status}}</td>
+        <td> {{obj.guest_name}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
