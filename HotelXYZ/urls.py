@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from hotel.views import RoomsView
+from hotel.views import rooms_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', RoomsView.as_view(), name='rooms'),
+    url(r'^home/', rooms_view, name="rooms"),
 
 ]
