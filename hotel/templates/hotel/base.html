@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <style>
+div {
+    margin: 35px;
+}
+</style>
+        <title>Hotel XYZ</title>
+
+    </head>
+<body>
+
+    <div class="page-header">
+        <h1>Hotel XYZ</h1>
+        <a href="/home/">Rooms</a>
+        <a href="/add/">Add</a>
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body></html>

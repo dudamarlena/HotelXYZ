@@ -1,0 +1,17 @@
+{% extends 'hotel/base.html' %}
+
+{% block content %}
+
+<div class="row">
+    <h1>Add room</h1>
+
+    <form method="POST"> {%csrf_token%}
+        {{ form.as_p }}
+        <button type="submit">Add new room</button>
+    </form>
+</div>
+
+{% endblock %}
+
+
+

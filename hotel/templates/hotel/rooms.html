@@ -1,28 +1,37 @@
 {% extends 'hotel/base.html' %}
 
 {% block content %}
+<style>
+        table, th, td {
+        border: 1px solid black;
+        padding: 3px;
+        border-collapse: collapse;
+        text-align: center;
+        }
+        h2 {text-align: center;
+        }
 
+</style>
 <div class="row">
-    <h1>Rooms</h1>>
+    <h2>Rooms</h2>
+
     <table style="width:100%">
+
         <tr>
-            <th>Room number</th>
+            <th >Room number</th>
             <th>Status</th>
             <th>Guest name</th>
         </tr>
         {% for obj in rooms_list %}
         <tr>
-            <td> {{obj.room_number}}</td>
+            <td>{{obj.room_number}}</td>
             <td> {{obj.status}}</td>
             <td> {{obj.guest_name}}</td>
         </tr>
         {% endfor %}
 
     </table>
-
-    <form method="POST"> {%csrf_token%}
-        <button type="submit">Add new room</button>
-    </form>
+    <button type="submit"><a href="/add/">Add new room</a></button>
 </div>
 
 {% endblock %}
