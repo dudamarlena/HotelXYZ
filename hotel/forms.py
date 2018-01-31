@@ -1,8 +1,8 @@
 from django import forms
-from hotel.models import Rooms
+from hotel.models import Room
 
 
 class AddRoomForm(forms.ModelForm):
     class Meta:
-        model = Rooms
+        model = Room
         fields = ['room_number']
