@@ -36,7 +36,7 @@ datashape==0.5.4
 decorator==4.0.11
 dill==0.2.6
 distributed==1.17.1
-Django==1.11.2
+Django==1.11.28
 django-postman==3.6.1
 djangorestframework==3.7.7
 docutils==0.13.1
