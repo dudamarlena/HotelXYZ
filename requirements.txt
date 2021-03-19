@@ -38,7 +38,7 @@ dill==0.2.6
 distributed==1.17.1
 Django==1.11.2
 django-postman==3.6.1
-djangorestframework==3.7.7
+djangorestframework==3.11.2
 docutils==0.13.1
 entrypoints==0.2.3
 et-xmlfile==1.0.1
