@@ -35,7 +35,7 @@ dask==0.15.0
 datashape==0.5.4
 decorator==4.0.11
 dill==0.2.6
-distributed==1.17.1
+distributed==2021.10.0
 Django==1.11.2
 django-postman==3.6.1
 djangorestframework==3.7.7
